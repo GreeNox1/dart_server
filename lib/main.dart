@@ -32,7 +32,7 @@ class Main {
 
     final server = await serve(
       handler,
-      Constants.host,
+      InternetAddress.anyIPv4, // Constants.host,
       int.parse(Platform.environment['PORT'] ?? Constants.port),
     );
 
